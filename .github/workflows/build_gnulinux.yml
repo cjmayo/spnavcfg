@@ -57,6 +57,7 @@ jobs:
           [[ "${QT_MAJOR_VERSION}" == 6 ]]  # i.e. assert
           sudo apt-get install qt6-base-dev
         fi
+        sudo apt-get install libxkbcommon-dev
 
     - name: install dependency Clang 19
       if: "${{ matrix.cc == 'clang-19' }}"
